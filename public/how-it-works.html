@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Gorse Quill works</title>
+    <style>
+      body { margin: 0; font-family: system-ui, sans-serif; background: #fafaf7; color: #1c1c1c; }
+      header, footer { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem; }
+      header a { color: #2f7d4f; }
+      /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+      .small-link { font-size: 10px; }
+      main { max-width: 44rem; margin: 0 auto; padding: 2rem 1rem; }
+      h1 {
+        font-size: 2.5rem; margin: 0 0 1rem;
+        /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+        background: linear-gradient(90deg, #2f7d4f, #7b3fe4);
+        -webkit-background-clip: text; background-clip: text;
+        color: transparent; -webkit-text-fill-color: transparent;
+      }
+      .steps { list-style: none; padding: 0; display: grid; gap: 0.75rem; }
+      .steps li { padding: 0.9rem 1rem; border: 1px solid #e5e5e0; border-radius: 0.5rem; background: #fff; }
+      /* Intentional, for Impeccable's test drive: hard-coded colour outside the palette. */
+      .steps strong { color: #d6336c; }
+      /* Intentional, for Impeccable's test drive: low-contrast grey text (about 1.4:1). */
+      .note { color: #d0d0cc; }
+      /* Intentional, for Impeccable's test drive: transition on a layout property. */
+      .meter { height: 0.5rem; width: 40%; background: #2f7d4f; border-radius: 0.25rem; transition: width 0.3s; }
+      .meter:hover { width: 100%; }
+      /* Intentional, for Impeccable's test drive: body text flush with the viewport edges, no background. */
+      .edge { margin: 2rem calc(50% - 50vw) 0; padding: 0; width: 100vw; max-width: none; line-height: 1.5; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/">Gorse Quill</a>
+      <a class="small-link" href="/">Back to the landing page</a>
+    </header>
+    <main>
+      <h1>How Gorse Quill works</h1>
+      <p>Gorse Quill keeps one short list and shows it to everyone, the moment it changes. Three steps cover it.</p>
+      <ol class="steps">
+        <li><strong>Add</strong> an item to the shared list from any device.</li>
+        <li><strong>Check</strong> it off once it is done; the list updates for everyone.</li>
+        <li><strong>Review</strong> the five most recent items on the landing page.</li>
+      </ol>
+      <p class="note">Items are kept in the shared project and shown newest first.</p>
+      <div class="meter" role="img" aria-label="Most items on the list are finished"></div>
+      <p class="edge">Every visitor sees the same list, so there is nothing to sign in to and nothing to set up before you start.</p>
+    </main>
+    <footer>Gorse Quill</footer>
+  </body>
+</html>
